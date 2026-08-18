@@ -1,0 +1,53 @@
+{
+  "name": "@mapconductor/reactnative-for-mapbox",
+  "version": "0.2.0",
+  "private": true,
+  "description": "React Native provider for MapConductor Mapbox - the RN-only native bridge; see @mapconductor/react-for-mapbox for the web/React DOM provider.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "android",
+    "ios",
+    "MapConductorReactForMapbox.podspec",
+    "react-native.config.js",
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --watch",
+    "clean": "rm -rf dist",
+    "test": "echo 'No tests yet'"
+  },
+  "keywords": [
+    "maps",
+    "mapbox",
+    "react-native",
+    "typescript"
+  ],
+  "author": "MapConductor",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@mapconductor/js-sdk-core": "^0.2.0",
+    "react": "^19.2.0",
+    "react-native": ">=0.73.0"
+  },
+  "dependencies": {
+    "@mapconductor/js-sdk-core": "^0.2.0",
+    "@mapconductor/js-sdk-react": "^0.2.0",
+    "@mapconductor/react-for-mapbox": "^0.2.0"
+  },
+  "devDependencies": {
+    "react": "^19.2.7",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}

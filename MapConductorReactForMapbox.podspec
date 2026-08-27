@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
   # MapboxCommon）は Mapbox の CDN から降りてくる。**実行時には公開アクセストークンが
   # 別途必要**（Info.plist の `MBXAccessToken` か `MapboxOptions.accessToken`）。
   s.dependency "React-Core"
-  s.dependency "MapConductorCore"
+  s.dependency "MapConductorCore", "~> 1.3.0"
   s.dependency "MapConductorReactNativeCore"
   s.dependency "MapConductorReactMarkerClustering"
-  s.dependency "MapConductorForMapbox"
+  s.dependency "MapConductorForMapbox", "~> 1.3.0"
   s.dependency "MapboxMaps", "~> 11.26"
 end

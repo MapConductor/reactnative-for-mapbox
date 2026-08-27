@@ -1,6 +1,6 @@
 {
   "name": "@mapconductor/reactnative-for-mapbox",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "React Native provider for MapConductor Mapbox - the RN-only native bridge; see @mapconductor/react-for-mapbox for the web/React DOM provider.",
   "main": "./dist/index.js",
@@ -42,11 +42,11 @@
   },
   "dependencies": {
     "@mapconductor/js-sdk-core": "^0.2.0",
-    "@mapconductor/js-sdk-react": "^0.2.0",
-    "@mapconductor/react-for-mapbox": "^0.2.0"
+    "@mapconductor/js-sdk-react": "^0.2.1",
+    "@mapconductor/react-for-mapbox": "^0.2.1"
   },
   "devDependencies": {
-    "react": "^19.2.7",
+    "react": "^19.2.8",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }

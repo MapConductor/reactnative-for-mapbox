@@ -25,7 +25,13 @@ export function MapboxMapView(props: MapboxMapViewProps) {
       // よって 3 つを貫く実体は URI だけ。ネイティブは受け取った URI をそのまま
       // `loadStyle` / `styleURI` へ流す。
       // MapTiler / Longdo は id を渡している。**写経して揃えないこと。**
-      mapDesignValue={props.state.mapDesignType.styleJsonURL}
+      // An object style (what a vector tile layer hands over on the web) has
+      // no URI; the native SDKs take the JSON text in its place.
+      mapDesignValue={
+        typeof props.state.mapDesignType.styleJsonURL === 'string'
+          ? props.state.mapDesignType.styleJsonURL
+          : JSON.stringify(props.state.mapDesignType.styleJsonURL)
+      }
       createController={(ref, camera) => new MapboxViewController(ref, camera)}
     />
   );

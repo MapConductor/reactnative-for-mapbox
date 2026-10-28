@@ -54,4 +54,5 @@ interface MapboxMapViewProps extends MapViewBaseProps<MapboxViewStateInterface> 
  */
 declare function MapboxMapView(props: MapboxMapViewProps): React.JSX.Element;
 
-export { type MapboxMap, MapboxMapView, MapboxMapViewHolder, type MapboxMapViewProps, type MapboxMapViewRef, MapboxViewController, type MapboxViewControllerInterface, type NativeMapboxViewEvent, type NativeMapboxViewProps };
+export { MapboxMapView, MapboxMapViewHolder, MapboxViewController };
+export type { MapboxMap, MapboxMapViewProps, MapboxMapViewRef, MapboxViewControllerInterface, NativeMapboxViewEvent, NativeMapboxViewProps };

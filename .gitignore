@@ -49,6 +49,8 @@ dist/*
 *.mts
 *.map
 *.mjs
+# node:test のテスト（とその補助）は手書きのソースなので追跡する。
+!test/**/*.mjs
 !examples/basic/server.mjs
 *.cjs
 dist/*.d.ts
